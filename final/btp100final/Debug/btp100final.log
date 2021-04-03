@@ -1,0 +1,4 @@
+﻿  fundamentals.c
+C:\Users\Sunny\Desktop\BTP105final\final\btp100final\fundamentals.c(10,7): warning C4013: 'gets' undefined; assuming extern returning int
+C:\Users\Sunny\Desktop\BTP105final\final\btp100final\fundamentals.c(17,17): warning C4018: '>=': signed/unsigned mismatch
+  btp100final.vcxproj -> C:\Users\Sunny\Desktop\BTP105final\final\btp100final\Debug\btp100final.exe
