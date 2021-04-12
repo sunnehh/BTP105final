@@ -24,4 +24,15 @@ void fundamentals() {
 		}
 	}
 	printf("*** End of Indexing Strings Demo ***\n\n");
+
+	printf("*** Start of Measuring Strings Demo ***\n");
+	char buffer2[80];
+	while (TRUE) {
+		printf("Type a string (q - to quit):\n");
+		gets(buffer2); // prompts stdin for a string
+		if (strcmp(buffer2, "q") == 0) break; // quits the while loop if user entered 'q'
+		printf("The length is %lu\n", strlen(buffer2)); // get length of the string
+	}
+	printf("*** End of Measuring Strings Demo ***\n\n");
+
 }
