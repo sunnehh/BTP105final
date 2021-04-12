@@ -1,5 +1,6 @@
 #include "fundamentals.h"
 
+
 void fundamentals() {
 	printf("*** Start of Indexing Strings Demo ***\n");
 	char buffer1[80];
@@ -35,4 +36,17 @@ void fundamentals() {
 	}
 	printf("*** End of Measuring Strings Demo ***\n\n");
 
+	printf("*** Start of Copying Strings Demo ***\n");
+	char destination[80];
+	char source[80];
+	while (TRUE) {
+		destination[0] = '\0'; // clear the destination string
+		printf("Destination string is reset to empty\n");
+		printf("Type a source string (q - to quit):\n");
+		gets(source); // grabs a string from stdin
+		if (strcmp(source, "q") == 0) break; // quits loop if q is entered
+		strcpy(destination, source); // copies the string into destiantion
+		printf("New destination string is \'%s\':\n", destination);
+	}
+	printf("*** End of Copying Strings Demo ***\n\n");
 }
